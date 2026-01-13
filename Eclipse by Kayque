@@ -1,0 +1,21 @@
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+
+local Window = OrionLib:MakeWindow({
+	Name = "Eclipse",
+	HidePremium = false,
+	SaveConfig = true,
+	ConfigFolder = "Eclipse"
+})
+
+local MainTab = Window:MakeTab({
+	Name = "Principal",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+MainTab:AddButton({
+	Name = "Teste",
+	Callback = function()
+		print("Funcionando")
+	end
+})
